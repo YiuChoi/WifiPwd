@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">WifiPwd</string>
+    <string name="wifi_state">wifi_state</string>
+</resources>
