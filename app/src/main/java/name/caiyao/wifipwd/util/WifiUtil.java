@@ -6,7 +6,6 @@ import android.net.wifi.ScanResult;
 import android.net.wifi.WifiConfiguration;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
-import android.util.Log;
 
 import java.util.List;
 
@@ -87,7 +86,6 @@ public class WifiUtil {
     mWifiManager.startScan();
     // 得到扫描结果
     mWifiList = mWifiManager.getScanResults();
-    Log.i("TAG",mWifiList.size()+"");
     // 得到配置好的网络连接
     mWifiConfiguration = mWifiManager.getConfiguredNetworks();
 
