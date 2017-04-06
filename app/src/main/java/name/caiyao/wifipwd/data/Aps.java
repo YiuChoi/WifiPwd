@@ -5,6 +5,8 @@ package name.caiyao.wifipwd.data;
  */
 
 public class Aps {
-
-
+  String pwd;
+  String ssid;
+  String apRefId;
+  String pwdId;
 }

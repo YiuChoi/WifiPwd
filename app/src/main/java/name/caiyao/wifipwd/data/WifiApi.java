@@ -10,5 +10,5 @@ import retrofit2.http.POST;
 public interface WifiApi {
 
   @POST("http://ap.51y5.net/ap/fa.sec")
-  Observable<>
+  Observable<WifiResult> getPwd();
 }
