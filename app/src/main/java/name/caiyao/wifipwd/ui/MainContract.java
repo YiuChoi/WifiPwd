@@ -24,7 +24,7 @@ public interface MainContract {
 
     void getWifilist();
 
-    void getPwd();
+    void getPwd(ScanResult scanResult);
   }
 
 }

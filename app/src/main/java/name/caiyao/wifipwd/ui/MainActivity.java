@@ -44,13 +44,13 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
     rv_wifi.setHasFixedSize(true);
     srl_wifi.setOnRefreshListener(this);
 
-    //DaggerMainComponent.builder().mainPresenterModule(new MainPresenterModule(this, this)).build().inject(this);
+    DaggerMainComponent.builder().mainPresenterModule(new MainPresenterModule(this, this)).build().inject(this);
     wifiListAdapter = new WifiListAdapter(scanResults);
     rv_wifi.setAdapter(wifiListAdapter);
     wifiListAdapter.setOnItemCLickListener(new WifiListAdapter.OnItemCLickListener() {
       @Override
       public void OnItemClick(View view, int position) {
-
+        mainPresenter.getPwd(scanResults.get(position));
       }
     });
     mainPresenter.getWifilist();
